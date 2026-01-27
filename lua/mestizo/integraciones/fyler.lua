@@ -1,0 +1,18 @@
+return {
+	FylerFSDirectoryName = { link = "Directory" },
+	FylerFSDirectoryIcon = { link = "Directory" },
+	FylerConfirmRed = { ctermfg = 1 },
+	FylerIndentMarker = { link = "IndentMarker" },
+	FylerGitAdded = { link = "Added" },
+	FylerGitUntracked = { link = "Untracked" },
+	FylerGitUnstaged = { link = "Unstaged" },
+	FylerGitStaged = { link = "Staged" },
+	FylerGitDeleted = { link = "Deleted" },
+	FylerGitModified = { link = "Modified" },
+	FylerGitRenamed = { link = "Modified" },
+	FylerGitIgnored = { link = "Ignored" },
+	FylerGitConflict = { ctermfg = 5 },
+	FylerBorder = { link = "LineNr" },
+	FylerRed = { ctermfg = 1 },
+	FylerGreen = { ctermfg = 2 },
+}

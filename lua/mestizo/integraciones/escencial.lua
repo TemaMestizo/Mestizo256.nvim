@@ -17,7 +17,18 @@ return {
 	PmenuSel = { ctermfg = 16, ctermbg = 1, underline = false, bold = true },
 	PmenuSbar = { ctermbg = 236 },
 	PmenuThumb = { ctermbg = 240 },
+
 	Directory = { ctermfg = 1, bold = true },
+	IndentMarker = { ctermfg = 234 },
+
+	Added = { ctermfg = 2 },
+	Untracked = { link = "Added" },
+	Unstaged = { link = "Added" },
+	Staged = { ctermfg = 220 },
+	Deleted = { ctermfg = 1, strikethrough = true },
+	Modified = { ctermfg = 3 },
+	Renamed = { link = "Modified" },
+	Ignored = { link = "Comment" },
 
 	netrwHelpCmd = { ctermfg = 6 },
 	netrwClassify = { link = "Directory" },
