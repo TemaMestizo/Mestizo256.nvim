@@ -1,7 +1,8 @@
 return {
+	Title = { ctermfg = 16, ctermbg = 1, bold = true },
 	Normal = { ctermfg = 7 },
-	NormalFloat = { ctermfg = 7 },
-	FloatBorder = { ctermfg = 240 },
+	NormalFloat = { ctermbg = 233 },
+	FloatBorder = { ctermfg = 233, ctermbg = 233 },
 	WinSeparator = { ctermfg = 0 },
 	EndOfBuffer = { ctermfg = 16 },
 	StatusLine = { ctermfg = 246 },
