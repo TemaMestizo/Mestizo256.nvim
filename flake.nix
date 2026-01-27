@@ -2,7 +2,7 @@
   description = "Un tema oscuro de Neovim para los que no salen de casa";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
   };
 
   outputs =

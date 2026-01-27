@@ -27,6 +27,11 @@ pkgs.mkShell {
             jsdoc
             lua
             luadoc
+            gitcommit
+            gitignore
+            git_config
+            git_rebase
+            gitattributes
           ]
           |> map (gramatica: {
             dir = "${gramatica}";

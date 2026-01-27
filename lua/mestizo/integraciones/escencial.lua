@@ -30,6 +30,16 @@ return {
 	Renamed = { link = "Modified" },
 	Ignored = { link = "Comment" },
 
+	DiffAdd = { ctermfg = 2, ctermbg = 22 },
+	DiffChange = { ctermfg = 3, ctermbg = 58 },
+	DiffDelete = { ctermfg = 1, ctermbg = 52 },
+	diffOldFile = { ctermfg = 243, underline = true },
+	diffNewFile = { ctermfg = 4, underline = true },
+	diffFile = { link = "Title" },
+	gitHash = { ctermfg = 248 },
+	gitIdentityKeyword = { ctermfg = 254 },
+	gitIdentity = { ctermfg = 7 },
+
 	netrwHelpCmd = { ctermfg = 6 },
 	netrwClassify = { link = "Directory" },
 
