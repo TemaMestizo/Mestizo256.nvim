@@ -23,6 +23,10 @@ local function establecer_colores(claves)
 	end
 end
 
+M.integraciones_especiales = {
+	reactive = require("mestizo.integraciones_especiales.reactive"),
+}
+
 M.establecer = function()
 	vim.cmd.hi("clear")
 	vim.g.colors_name = "mestizo"
