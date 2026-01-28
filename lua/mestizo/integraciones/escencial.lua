@@ -17,6 +17,9 @@ return {
 	PmenuSel = { ctermfg = 209, underline = false },
 	PmenuSbar = { ctermbg = 236 },
 	PmenuThumb = { ctermbg = 240 },
+  CursorLine = { ctermbg = 233 },
+  CursorLineNr = { ctermfg = 209, ctermbg = 233, bold = true },
+  CursorLineSign = { ctermfg = 209, ctermbg = 233, bold = true },
 
 	Directory = { ctermfg = 1, bold = true },
 	IndentMarker = { ctermfg = 234 },
@@ -53,7 +56,7 @@ return {
 	String = { ctermfg = 2, italic = true },
 	Method = { ctermfg = 6 },
 	Function = { ctermfg = 4 },
-	Delimiter = { ctermfg = 246 },
+	Delimiter = { ctermfg = 249 },
 	Statement = { link = "Delimiter" },
 	Type = { ctermfg = 3 },
 	Special = { link = "Type" },

@@ -1,3 +1,4 @@
+vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.autoindent = true
 vim.opt.expandtab = true
