@@ -3,8 +3,16 @@ local M = {}
 ---@return table<table<string, string>>
 local function obtener_integraciones()
 	local integraciones = {}
-	local nombres_de_integraciones =
-		{ "escencial", "lsp", "neotree", "fyler", "gitsigns", "telescope", "rainbow-delimiters" }
+	local nombres_de_integraciones = {
+		"escencial",
+		"lsp",
+		"neotree",
+		"fyler",
+		"gitsigns",
+		"telescope",
+		"rainbow-delimiters",
+		"which-key",
+	}
 
 	for _, nombre in ipairs(nombres_de_integraciones) do
 		table.insert(integraciones, require("mestizo.integraciones." .. nombre))
