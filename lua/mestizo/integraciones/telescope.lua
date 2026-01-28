@@ -1,13 +1,19 @@
 return {
-  TelescopeResultsNormal = { link = "Pmenu" },
-	TelescopeSelection = { ctermfg = 209, ctermbg = 235 },
-	TelescopeTitle = { link = "Title" },
-	TelescopeBorder = { ctermbg = 233, ctermfg = 233 },
-	TelescopeNormal = { ctermbg = 233 },
-  TelescopePromptBorder = { ctermfg = 17, ctermbg = 17 },
-	TelescopePromptNormal = { ctermbg = 17 },
+	TelescopeSelection = { ctermfg = 0, ctermbg = 4 },
+	TelescopeMatching = { link = "Search" },
+	TelescopeMultiSelection = { link = "Visual" },
+
+  TelescopeTitle = { ctermfg = 0, ctermbg = 4 },
+
+	TelescopeBorder = { ctermfg = 4 },
+	TelescopeNormal = { link = "NormalFloat" },
+	TelescopeResultsNormal = { ctermfg = 252 },
+
+	TelescopePromptBorder = { link = "TelescopeBorder" },
+	TelescopePromptNormal = { link = "NormalFloat" },
+	TelescopePromptTitle = { link = "TelescopeTitle" },
+
+  TelescopePreviewBorder = { link = "TelescopeBorder" },
 	TelescopePreviewNormal = { link = "NormalFloat" },
-	TelescopePreviewBorder = { link = "FloatBorder" },
-  TelescopeMatching = { link = "Search" },
-  TelescopeMultiSelection = { link = "Visual" },
+	TelescopePreviewTitle = { link = "TelescopeTitle" },
 }
