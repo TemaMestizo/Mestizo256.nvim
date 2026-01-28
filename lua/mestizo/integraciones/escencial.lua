@@ -1,8 +1,8 @@
 return {
 	Title = { ctermfg = 16, ctermbg = 1, bold = true },
 	Normal = { ctermfg = 7 },
-	NormalFloat = { ctermbg = 233 },
-	FloatBorder = { ctermfg = 233, ctermbg = 233 },
+	NormalFloat = { ctermbg = 235 },
+	FloatBorder = { ctermfg = 235, ctermbg = 235 },
 	WinSeparator = { ctermfg = 0 },
 	EndOfBuffer = { ctermfg = 16 },
 	StatusLine = { ctermfg = 246 },
@@ -14,7 +14,7 @@ return {
 	Search = { ctermbg = 6, ctermfg = 16 },
 	CurSearch = { ctermbg = 1, ctermfg = 16 },
 	Pmenu = { ctermfg = 245, ctermbg = 233 },
-	PmenuSel = { ctermfg = 16, ctermbg = 1, underline = false, bold = true },
+	PmenuSel = { ctermfg = 209, underline = false },
 	PmenuSbar = { ctermbg = 236 },
 	PmenuThumb = { ctermbg = 240 },
 
