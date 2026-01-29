@@ -11,6 +11,12 @@ return {
 			end,
 		},
 		{
+			"<space>fh",
+			function()
+				require("telescope.builtin").highlights()
+			end,
+		},
+		{
 			"<space>fg",
 			function()
 				require("telescope.builtin").live_grep()
