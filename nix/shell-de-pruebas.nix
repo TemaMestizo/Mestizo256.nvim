@@ -3,6 +3,9 @@ pkgs.mkShell {
   packages = with pkgs; [
     neovim-unwrapped
 
+    nixd
+    nil
+    nixfmt
     lua-language-server
     stylua
     typescript-language-server
@@ -21,6 +24,7 @@ pkgs.mkShell {
         dependencies =
           with pkgs.vimPlugins.nvim-treesitter-parsers;
           [
+            nix
             go
             typescript
             javascript
