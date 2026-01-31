@@ -1,5 +1,5 @@
 return {
-  enabled = false,
+	enabled = true,
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",
 	dependencies = {
@@ -10,5 +10,8 @@ return {
 	lazy = false,
 	keys = {
 		{ "<C-n>", "<cmd>Neotree toggle<cr>" },
+	},
+	opts = {
+		popup_border_style = "",
 	},
 }

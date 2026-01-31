@@ -11,12 +11,12 @@ return {
 	NeoTreeGitUntracked = { link = "Untracked" },
 	NeoTreeGitStaged = { link = "Staged" },
 	NeoTreeGitModified = { link = "Modified" },
-	NeoTreeGitUnstaged = { link = "Unstaged"},
+	NeoTreeGitUnstaged = { link = "Unstaged" },
 	NeoTreeGitDeleted = { link = "Deleted" },
 	NeoTreeGitIgnored = { link = "Ignored" },
 
 	NeoTreeFloatNormal = { link = "NormalFloat" },
-	NeoTreeFloatBorder = { link = "FloatBorder" },
-	NeoTreeFloatTitle = { link = "Title" },
-	NeoTreeTitleBar = { link = "Title" },
+	NeoTreeFloatBorder = { ctermfg = 208 },
+	NeoTreeFloatTitle = { ctermfg = 0, ctermbg = 208 },
+	NeoTreeTitleBar = { link = "NeoTreeFloatTitle" },
 }
