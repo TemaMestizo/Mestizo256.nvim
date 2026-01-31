@@ -4,7 +4,18 @@ return {
 	dependencies = "nvim-tree/nvim-web-devicons",
 	event = { "BufEnter", "BufReadPost", "BufWinEnter", "BufRead" },
 	config = function()
-		require("bufferline").setup()
+		require("bufferline").setup({
+			options = {
+				offsets = require("mestizo.util").map({ "fyler", "neo-tree" }, function(tipo_de_archivo)
+					return {
+						filetype = tipo_de_archivo,
+						text = "Archivos",
+						text_align = "center",
+						separator = true,
+					}
+				end),
+			},
+		})
 		require("mestizo").integraciones_especiales.bufferline()
 	end,
 	keys = {

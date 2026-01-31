@@ -9,4 +9,18 @@ M.establecer_colores = function(claves)
 	end
 end
 
+---@generic T, K
+---@param lista T[]
+---@param fn fun(valor: T): K
+---@return K[]
+M.map = function(lista, fn)
+	local nueva_lista = {}
+
+	for _, valor in ipairs(lista) do
+		table.insert(nueva_lista, fn(valor))
+	end
+
+	return nueva_lista
+end
+
 return M

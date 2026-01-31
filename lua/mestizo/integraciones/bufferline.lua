@@ -1,5 +1,5 @@
 return {
-  BufferLineBuffer = { ctermfg = 250, ctermbg = "NONE" },
+	BufferLineBuffer = { ctermfg = 250, ctermbg = "NONE" },
 	BufferLineBufferSelected = { link = "Title" },
 	BufferLineBufferVisible = { ctermfg = 250, ctermbg = 234 },
 
@@ -21,7 +21,21 @@ return {
 	BufferLineModifiedVisible = { link = "BufferLineBufferVisible" },
 	BufferLineModified = { link = "BufferLineBuffer" },
 
+	BufferLineNumbersSelected = { link = "BufferLineBufferSelected" },
+	BufferLineNumbersVisible = { link = "BufferLineBufferVisible" },
+	BufferLineNumbers = { link = "BufferLineBuffer" },
+
 	BufferLinePickSelected = { ctermfg = 209, ctermbg = 1 },
 	BufferLinePickVisible = { ctermfg = 6 },
 	BufferLinePick = { link = "BufferLinePickVisible" },
+
+	BufferLineTab = { link = "BufferLineBuffer" },
+	BufferLineTabSelected = { ctermfg = 0, ctermbg = 6 },
+
+	BufferLineTabSeparator = { link = "BufferLineSeparator" },
+	BufferLineTabSeparatorSelected = { link = "BufferLineTabSelected" },
+
+	BufferLineTabClose = { link = "BufferLineTabSelected" },
+
+	BufferLineOffsetSeparator = { link = "FloatBorder" },
 }
