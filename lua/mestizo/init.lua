@@ -14,7 +14,7 @@ local function obtener_integraciones()
 		"rainbow-delimiters",
 		"which-key",
 		"bufferline",
-    "cmp"
+		"cmp",
 	}
 
 	for _, nombre in ipairs(nombres_de_integraciones) do
@@ -29,6 +29,7 @@ local claves = obtener_integraciones()
 M.integraciones_especiales = {
 	reactive = require("mestizo.integraciones_especiales.reactive"),
 	bufferline = require("mestizo.integraciones_especiales.bufferline"),
+	cmp = require("mestizo.integraciones_especiales.cmp"),
 }
 
 M.establecer = function()

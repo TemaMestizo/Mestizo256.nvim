@@ -13,26 +13,7 @@ return {
 		local cmp = require("cmp")
 
 		cmp.setup({
-			window = {
-				completion = {
-					border = "rounded",
-					winhighlight = table.concat({
-						"Normal:CmpNormal",
-						"FloatBorder:CmpBorder",
-						"CursorLine:CmpCursorLine",
-						"Search:CmpSearch",
-					}, ","),
-				},
-				documentation = {
-					border = "rounded",
-					winhighlight = table.concat({
-						"Normal:CmpDocumentationNormal",
-						"FloatBorder:CmpDocumentationBorder",
-						"CursorLine:CmpDocumentationCursorLine",
-						"Search:CmpDocumentationSearch",
-					}, ","),
-				},
-			},
+			window = require("mestizo").integraciones_especiales.cmp,
 			snippet = {
 				expand = function(args)
 					vim.snippet.expand(args.body)
