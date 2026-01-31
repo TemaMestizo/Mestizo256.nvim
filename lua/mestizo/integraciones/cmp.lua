@@ -1,0 +1,32 @@
+return {
+	CmpBorder = { link = "FloatBorder" },
+	CmpNormal = { ctermfg = 250 },
+	CmpCursorLine = { link = "CursorLine" },
+
+	CmpDocumentationBorder = { link = "FloatBorder" },
+	CmpDocumentationNormal = { link = "Normal" },
+	CmpDocumentationCursorLine = { link = "CursorLine" },
+
+	CmpItemAbbrDeprecated = { link = "Comment" },
+	CmpItemAbbrMatch = { ctermfg = 1 },
+
+	CmpItemKindConstant = { link = "Constant" },
+	CmpItemKindEnumMember = { link = "Constant" },
+	CmpItemKindSnippet = { link = "Constant" },
+	CmpItemKindVariable = { ctermfg = 7 },
+	CmpItemKindMethod = { link = "Method" },
+	CmpItemKindFunction = { link = "Function" },
+	CmpItemKindKeyword = { link = "Keyword" },
+	CmpItemKindModule = { link = "Keyword" },
+	CmpItemKindUnit = { link = "Keyword" },
+	CmpItemKindEnum = { link = "Type" },
+	CmpItemKindClass = { link = "Type" },
+	CmpItemKindInterface = { link = "Type" },
+	CmpItemKindStruct = { link = "Type" },
+	CmpItemKindText = { link = "String" },
+	CmpItemKindFile = { ctermfg = 7 },
+	CmpItemKindFolder = { link = "Directory" },
+	CmpItemKindProperty = { link = "Property" },
+	CmpItemKindField = { link = "Property" },
+	CmpItemKindValue = { link = "Property" },
+}

@@ -2,7 +2,7 @@ return {
 	Title = { ctermfg = 0, ctermbg = 1 },
 	Normal = { ctermfg = 7 },
 	NormalFloat = { link = "Normal" },
-	FloatBorder = { ctermfg = 240 },
+	FloatBorder = { ctermfg = 242 },
 	WinSeparator = { link = "FloatBorder" },
 	EndOfBuffer = { ctermfg = 16 },
 	StatusLine = { ctermfg = 246 },
@@ -17,7 +17,7 @@ return {
 	PmenuSel = { ctermfg = 209, underline = false },
 	PmenuSbar = { ctermbg = 236 },
 	PmenuThumb = { ctermbg = 240 },
-	CursorLine = { ctermbg = 233 },
+	CursorLine = { ctermbg = 234 },
 	CursorLineNr = { ctermfg = 209, ctermbg = 233, bold = true },
 	CursorLineSign = { ctermfg = 209, ctermbg = 233, bold = true },
 
@@ -46,7 +46,7 @@ return {
 	netrwHelpCmd = { ctermfg = 6 },
 	netrwClassify = { link = "Directory" },
 
-	Comment = { ctermfg = 245, italic = true },
+	Comment = { ctermfg = 242, italic = true },
 	Operator = { ctermfg = 1 },
 	Builtin = { ctermfg = 1, bold = true },
 	Property = { ctermfg = 99, nocombine = true },
