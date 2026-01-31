@@ -9,6 +9,7 @@ return {
 	BlinkCmpDocBorder = { link = "FloatBorder" },
 	BlinkCmpDocSeparator = { link = "FloatBorder" },
 	BlinkCmpDoc = { link = "NormalFloat" },
+  BlinkCmpGhosttext = { link = "Comment" },
 
 	BlinkCmpKindOperator = { link = "Operator" },
 	BlinkCmpKindConstant = { link = "Constant" },

@@ -16,6 +16,7 @@ local function obtener_integraciones()
 		"bufferline",
 		"cmp",
 		"blink",
+		"noice",
 	}
 
 	for _, nombre in ipairs(nombres_de_integraciones) do
