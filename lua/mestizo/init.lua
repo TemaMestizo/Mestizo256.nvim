@@ -15,6 +15,7 @@ local function obtener_integraciones()
 		"which-key",
 		"bufferline",
 		"cmp",
+		"blink",
 	}
 
 	for _, nombre in ipairs(nombres_de_integraciones) do
