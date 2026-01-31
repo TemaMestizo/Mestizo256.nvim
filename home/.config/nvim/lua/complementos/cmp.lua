@@ -8,6 +8,7 @@ return {
 		"hrsh7th/cmp-cmdline",
 		"L3MON4D3/LuaSnip",
 		"saadparwaiz1/cmp_luasnip",
+		"onsails/lspkind.nvim",
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -34,6 +35,17 @@ return {
 				{ name = "path" },
 				{ name = "buffer" },
 			}),
+			formatting = {
+				fields = { "abbr", "icon", "kind", "menu" },
+				format = require("lspkind").cmp_format({
+					maxwidth = {
+						menu = 50,
+						abbr = 50,
+					},
+					ellipsis_char = "...",
+					show_labelDetails = true,
+				}),
+			},
 		})
 
 		require("luasnip.loaders.from_vscode").lazy_load()
@@ -49,7 +61,6 @@ return {
 			mapping = cmp.mapping.preset.cmdline(),
 			sources = cmp.config.sources({
 				{ name = "path" },
-			}, {
 				{ name = "cmdline" },
 			}),
 			matching = { disallow_symbol_nonprefix_matching = false },
