@@ -4,6 +4,7 @@
   "friendly-snippets": { "branch": "main", "commit": "6cd7280adead7f586db6fccbd15d2cac7e2188b9" },
   "fyler.nvim": { "branch": "stable", "commit": "bb8b9f30c652c948d35211958b0deec3496bcc08" },
   "gitsigns.nvim": { "branch": "main", "commit": "abf82a65f185bd54adc0679f74b7d6e1ada690c9" },
+  "hlchunk.nvim": { "branch": "main", "commit": "3bc2bd7aef28fbed6643534a0fdd0f19966544bc" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "f3df514fff2bdd4318127c40470984137f87b62e" },
   "noice.nvim": { "branch": "main", "commit": "7bfd942445fb63089b59f97ca487d605e715f155" },
@@ -15,6 +16,6 @@
   "rainbow-delimiters.nvim": { "branch": "master", "commit": "d6b802552cbe7d643a3b6b31f419c248d1f1e220" },
   "reactive.nvim": { "branch": "master", "commit": "0588b5c2b0cf49bd2232fe4366b3516c32edee44" },
   "telescope.nvim": { "branch": "master", "commit": "ad7d9580338354ccc136e5b8f0aa4f880434dcdc" },
-  "tiny-inline-diagnostic.nvim": { "branch": "dev", "commit": "91fd329cab5966784f859de35a8108fc6b6f7160" },
+  "tiny-inline-diagnostic.nvim": { "branch": "main", "commit": "91fd329cab5966784f859de35a8108fc6b6f7160" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }
 }

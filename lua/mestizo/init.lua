@@ -33,6 +33,7 @@ M.integraciones_especiales = {
 	bufferline = require("mestizo.integraciones_especiales.bufferline"),
 	cmp = require("mestizo.integraciones_especiales.cmp"),
 	tiny_inline_diagnostics = require("mestizo.integraciones_especiales.tiny-inline-diagnostics"),
+	hlchunk = require("mestizo.integraciones_especiales.hlchunk"),
 }
 
 M.establecer = function()
