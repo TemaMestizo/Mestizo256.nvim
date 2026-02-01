@@ -17,6 +17,7 @@ local function obtener_integraciones()
 		"cmp",
 		"blink",
 		"noice",
+		"mini-statusline",
 	}
 
 	for _, nombre in ipairs(nombres_de_integraciones) do
@@ -36,6 +37,7 @@ M.integraciones_especiales = {
 	hlchunk = require("mestizo.integraciones_especiales.hlchunk"),
 	noice = require("mestizo.integraciones_especiales.noice"),
 	blink = require("mestizo.integraciones_especiales.blink"),
+	mini_statusline = require("mestizo.integraciones_especiales.mini-statusline"),
 }
 
 M.establecer = function()
