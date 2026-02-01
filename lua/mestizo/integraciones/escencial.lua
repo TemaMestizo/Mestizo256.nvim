@@ -63,8 +63,8 @@ return {
 	Constant = { ctermfg = 209 },
 
 	DiagnosticUnnecessary = { ctermfg = 245 },
-	DiagnosticHint = { ctermfg = 6 },
 	DiagnosticError = { ctermfg = 1 },
 	DiagnosticWarn = { ctermfg = 3 },
 	DiagnosticInfo = { ctermfg = 2 },
+  DiagnosticHint = { ctermfg = 6 },
 }

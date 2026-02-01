@@ -17,6 +17,7 @@ local function obtener_integraciones()
 		"cmp",
 		"blink",
 		"noice",
+		"tiny-inline-diagnostics",
 	}
 
 	for _, nombre in ipairs(nombres_de_integraciones) do
@@ -32,6 +33,7 @@ M.integraciones_especiales = {
 	reactive = require("mestizo.integraciones_especiales.reactive"),
 	bufferline = require("mestizo.integraciones_especiales.bufferline"),
 	cmp = require("mestizo.integraciones_especiales.cmp"),
+	tiny_inline_diagnostics = require("mestizo.integraciones_especiales.tiny-inline-diagnostics"),
 }
 
 M.establecer = function()
