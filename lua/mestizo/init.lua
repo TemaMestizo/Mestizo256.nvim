@@ -17,7 +17,6 @@ local function obtener_integraciones()
 		"cmp",
 		"blink",
 		"noice",
-		"tiny-inline-diagnostics",
 	}
 
 	for _, nombre in ipairs(nombres_de_integraciones) do
