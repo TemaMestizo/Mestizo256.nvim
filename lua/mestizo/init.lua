@@ -34,6 +34,8 @@ M.integraciones_especiales = {
 	cmp = require("mestizo.integraciones_especiales.cmp"),
 	tiny_inline_diagnostics = require("mestizo.integraciones_especiales.tiny-inline-diagnostics"),
 	hlchunk = require("mestizo.integraciones_especiales.hlchunk"),
+	noice = require("mestizo.integraciones_especiales.noice"),
+	blink = require("mestizo.integraciones_especiales.blink"),
 }
 
 M.establecer = function()
