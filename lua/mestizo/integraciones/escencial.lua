@@ -1,8 +1,8 @@
 return {
 	Title = { ctermfg = 0, ctermbg = 1 },
 	Normal = { ctermfg = 7, ctermbg = 233 },
-	NormalFloat = { link = "Normal" },
-	FloatBorder = { ctermfg = 242 },
+	NormalFloat = { ctermbg = 235 },
+	FloatBorder = { ctermfg = 235 },
 	WinSeparator = { link = "FloatBorder" },
 	EndOfBuffer = { ctermfg = 233 },
 	StatusLine = { ctermfg = 247, ctermbg = 232 },
@@ -22,6 +22,8 @@ return {
 	CursorLineSign = { ctermfg = 209, ctermbg = 233, bold = true },
 
 	Directory = { ctermfg = 252 },
+  File = { ctermfg = 250 },
+  DotFile = { ctermfg = 244 },
 	IndentMarker = { ctermfg = 237 },
 
 	Added = { ctermfg = 2 },

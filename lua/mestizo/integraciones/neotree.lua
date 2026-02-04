@@ -1,14 +1,14 @@
 return {
-  NeoTreeCursorLine = { ctermbg = 234 },
+	NeoTreeCursorLine = { ctermbg = 234 },
 	NeoTreeNormal = { ctermbg = 16 },
 	NeoTreeNormalNC = { link = "NeoTreeNormal" },
-  NeoTreeWinSeparator = { ctermfg = 233, ctermbg = 233 },
+	NeoTreeWinSeparator = { ctermfg = 233, ctermbg = 233 },
 
 	NeoTreeDirectoryIcon = { link = "Directory" },
 	NeoTreeDirectoryName = { link = "Directory" },
 	NeoTreeRootName = { ctermfg = 254 },
-  NeoTreeFileName = { ctermfg = 250 },
-  NeoTreeDotFile = { ctermfg = 160 },
+	NeoTreeFileName = { link = "File" },
+	NeoTreeDotFile = { link = "DotFile" },
 	NeoTreeIndentMarker = { link = "IndentMarker" },
 	NeoTreeDimText = { link = "Comment" },
 	NeoTreeMessage = { link = "Comment" },
@@ -22,7 +22,7 @@ return {
 	NeoTreeGitIgnored = { link = "Ignored" },
 
 	NeoTreeFloatNormal = { link = "NormalFloat" },
-	NeoTreeFloatBorder = { ctermfg = 208 },
+	NeoTreeFloatBorder = { link = "FloatBorder" },
 	NeoTreeFloatTitle = { ctermfg = 0, ctermbg = 208 },
 	NeoTreeTitleBar = { link = "NeoTreeFloatTitle" },
 }
