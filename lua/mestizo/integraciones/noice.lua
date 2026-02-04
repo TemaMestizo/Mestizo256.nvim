@@ -1,7 +1,7 @@
 local claves = {
 	NoiceCmdlinePopupTitle = { link = "Title" },
 	NoicePopup = { link = "Normal" },
-	NoicePopupBorder = { link = "FloatNormal" },
+	NoicePopupBorder = { link = "WinSeparator" },
 }
 
 ---@param clave string

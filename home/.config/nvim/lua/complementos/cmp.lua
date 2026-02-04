@@ -1,5 +1,5 @@
 return {
-  -- enabled = false,
+  enabled = false,
 	"hrsh7th/nvim-cmp",
 	dependencies = {
 		"neovim/nvim-lspconfig",

@@ -21,8 +21,8 @@ return {
 	NeoTreeGitDeleted = { link = "Deleted" },
 	NeoTreeGitIgnored = { link = "Ignored" },
 
-	NeoTreeFloatNormal = { link = "NormalFloat" },
-	NeoTreeFloatBorder = { link = "FloatBorder" },
+	NeoTreeFloatNormal = { link = "Popup" },
+	NeoTreeFloatBorder = { link = "PopupBorder" },
 	NeoTreeFloatTitle = { ctermfg = 0, ctermbg = 208 },
 	NeoTreeTitleBar = { link = "NeoTreeFloatTitle" },
 }
