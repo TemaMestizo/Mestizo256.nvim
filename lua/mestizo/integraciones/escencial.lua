@@ -4,7 +4,7 @@ return {
 	Normal = { ctermfg = 7, ctermbg = 233 },
 	NormalFloat = { ctermbg = 235 },
 	FloatBorder = { ctermfg = 235 },
-	WinSeparator = { ctermfg = 238 },
+	WinSeparator = { ctermfg = 240 },
 	EndOfBuffer = { ctermfg = 233 },
 	StatusLine = { ctermfg = 247, ctermbg = 232 },
 	StatusLineNC = { link = "StatusLine" },
