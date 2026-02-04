@@ -1,9 +1,9 @@
 return {
-	CmpBorder = { link = "FloatBorder" },
+	CmpBorder = { link = "WinSeparator" },
 	CmpNormal = { ctermfg = 250 },
 	CmpCursorLine = { link = "CursorLine" },
 
-	CmpDocumentationBorder = { link = "FloatBorder" },
+	CmpDocumentationBorder = { link = "CmpBorder" },
 	CmpDocumentationNormal = { link = "Normal" },
 	CmpDocumentationCursorLine = { link = "CursorLine" },
 
