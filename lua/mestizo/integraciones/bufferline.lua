@@ -1,21 +1,27 @@
-return {
-	BufferLineBuffer = { ctermfg = 250, ctermbg = "NONE" },
-	BufferLineBufferSelected = { link = "Title" },
-	BufferLineBufferVisible = { ctermfg = 250, ctermbg = 234 },
+local integracion_escencial = require("mestizo.integraciones.escencial")
 
+return {
+	BufferLineFill = { ctermbg = 16, nocombine = true },
+
+	BufferLineBuffer = { link = "BufferLineFill" },
+	BufferLineBackground = { link = "BufferLineFill" },
+	BufferLineBufferSelected = integracion_escencial.Normal,
+	BufferLineBufferVisible = { link = "BufferLineBufferSelected" },
+
+	BufferLineCloseButton = { link = "BufferLineBuffer" },
 	BufferLineCloseButtonSelected = { link = "BufferLineBufferSelected" },
 	BufferLineCloseButtonVisible = { link = "BufferLineBufferVisible" },
 
 	BufferLineDevIconDefaultSelected = { link = "BufferLineBufferSelected" },
-	BufferLineDevIconDefaultVisible = { link = "BufferLineBufferVisible" },
+	BufferLineDevIconDefaultInactive = { link = "BufferLineBufferVisible" },
 
-	BufferLineSeparatorSelected = { link = "BufferLineBufferSelected" },
-	BufferLineSeparatorVisible = { link = "BufferLineBufferVisible" },
-	BufferLineSeparator = { ctermfg = 16 },
+	BufferLineSeparator = { ctermfg = 16, ctermbg = 16 },
+	BufferLineSeparatorSelected = { ctermfg = 16, ctermbg = 233 },
+	BufferLineSeparatorVisible = { link = "BufferLineSeparatorSelected" },
 
-	BufferLineIndicatorSelected = { link = "BufferLineBufferSelected" },
-	BufferLineIndicatorVisible = { link = "BufferLineBufferVisible" },
-	BufferLineIndicator = { link = "BufferLineSeparator" },
+	BufferLineIndicator = { ctermfg = 16, ctermbg = 16 },
+	BufferLineIndicatorSelected = { ctermfg = 233, ctermbg = 233 },
+	BufferLineIndicatorVisible = { link = "BufferLineIndicatorSelected" },
 
 	BufferLineModifiedSelected = { link = "BufferLineBufferSelected" },
 	BufferLineModifiedVisible = { link = "BufferLineBufferVisible" },

@@ -1,13 +1,13 @@
 return {
 	Title = { ctermfg = 0, ctermbg = 1 },
-	Normal = { ctermfg = 7 },
+	Normal = { ctermfg = 7, ctermbg = 233 },
 	NormalFloat = { link = "Normal" },
 	FloatBorder = { ctermfg = 242 },
 	WinSeparator = { link = "FloatBorder" },
-	EndOfBuffer = { ctermfg = 16 },
-	StatusLine = { ctermfg = 247 },
+	EndOfBuffer = { ctermfg = 233 },
+	StatusLine = { ctermfg = 247, ctermbg = 232 },
 	StatusLineNC = { link = "StatusLine" },
-	LineNr = { ctermfg = 237 },
+	LineNr = { ctermfg = 238 },
 	Visual = { ctermbg = 53 },
 	LspInlayHint = { ctermbg = 233, ctermfg = 248 },
 	Folded = { ctermbg = 1, ctermfg = 16 },
@@ -21,8 +21,8 @@ return {
 	CursorLineNr = { ctermfg = 209, ctermbg = 233, bold = true },
 	CursorLineSign = { ctermfg = 209, ctermbg = 233, bold = true },
 
-	Directory = { ctermfg = 1, bold = true },
-	IndentMarker = { ctermfg = 234 },
+	Directory = { ctermfg = 252 },
+	IndentMarker = { ctermfg = 237 },
 
 	Added = { ctermfg = 2 },
 	Untracked = { link = "Added" },

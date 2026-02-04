@@ -6,12 +6,14 @@ return {
 	config = function()
 		require("bufferline").setup({
 			options = {
+        separator_style = "slant",
 				offsets = require("mestizo.util").map({ "fyler", "neo-tree" }, function(tipo_de_archivo)
 					return {
 						filetype = tipo_de_archivo,
 						text = "Archivos",
 						text_align = "center",
-						separator = true,
+            highlight = "NeoTreeNormal",
+						separator = false,
 					}
 				end),
 			},
