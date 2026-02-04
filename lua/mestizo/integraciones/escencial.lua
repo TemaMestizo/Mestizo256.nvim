@@ -1,9 +1,10 @@
 return {
 	Title = { ctermfg = 0, ctermbg = 1 },
+	SubNormal = { ctermbg = 16 },
 	Normal = { ctermfg = 7, ctermbg = 233 },
 	NormalFloat = { ctermbg = 235 },
 	FloatBorder = { ctermfg = 235 },
-	WinSeparator = { link = "FloatBorder" },
+	WinSeparator = { ctermfg = 238 },
 	EndOfBuffer = { ctermfg = 233 },
 	StatusLine = { ctermfg = 247, ctermbg = 232 },
 	StatusLineNC = { link = "StatusLine" },
@@ -22,8 +23,8 @@ return {
 	CursorLineSign = { ctermfg = 209, ctermbg = 233, bold = true },
 
 	Directory = { ctermfg = 252 },
-  File = { ctermfg = 250 },
-  DotFile = { ctermfg = 244 },
+	File = { ctermfg = 250 },
+	DotFile = { ctermfg = 244 },
 	IndentMarker = { ctermfg = 237 },
 
 	Added = { ctermfg = 2 },
@@ -68,5 +69,5 @@ return {
 	DiagnosticError = { ctermfg = 1 },
 	DiagnosticWarn = { ctermfg = 3 },
 	DiagnosticInfo = { ctermfg = 2 },
-  DiagnosticHint = { ctermfg = 6 },
+	DiagnosticHint = { ctermfg = 6 },
 }
