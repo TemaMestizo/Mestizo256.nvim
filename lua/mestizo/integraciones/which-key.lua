@@ -1,8 +1,10 @@
+local fondo = 235
+
 return {
-	WhichKeyNormal = { link = "Normal" },
-	WhichKeyBorder = { ctermfg = 1 },
+	WhichKeyNormal = { ctermbg = fondo },
+	WhichKeyBorder = { ctermfg = fondo, ctermbg = fondo },
 	WhichKeyTitle = { link = "Title" },
 	WhichKeyDesc = { ctermfg = 254 },
-	WhichKeySeparator = { ctermfg = 244 },
-	WhichKey = { ctermfg = 1 },
+	WhichKeySeparator = { ctermfg = 248 },
+	WhichKey = { ctermfg = 209 },
 }
