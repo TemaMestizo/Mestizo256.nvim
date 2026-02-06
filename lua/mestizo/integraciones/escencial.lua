@@ -1,5 +1,5 @@
 return {
-	Title = { ctermfg = 0, ctermbg = 1 },
+	Title = { ctermfg = 0, ctermbg = 1, bold = true },
 	SubNormal = { ctermbg = 16 },
 	Normal = { ctermfg = 7, ctermbg = 233 },
 	NormalFloat = { link = "Normal" },
@@ -12,7 +12,7 @@ return {
 	StatusLineNC = { link = "StatusLine" },
 	LineNr = { ctermfg = 238 },
 	Visual = { ctermbg = 53 },
-	LspInlayHint = { ctermbg = 233, ctermfg = 248 },
+	LspInlayHint = { ctermbg = 234, ctermfg = 248 },
 	Folded = { ctermbg = 1, ctermfg = 16 },
 	Search = { ctermbg = 6, ctermfg = 0 },
 	CurSearch = { ctermbg = 1, ctermfg = 16 },
