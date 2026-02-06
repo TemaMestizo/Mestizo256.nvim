@@ -1,3 +1,6 @@
+local util = require("mestizo.util")
+local integracion_escencial = require("mestizo.integraciones.escencial")
+
 local claves = {
 	NoiceCmdlinePopupTitle = { link = "Title" },
 	NoicePopup = { link = "Normal" },
@@ -7,7 +10,8 @@ local claves = {
 ---@param clave string
 ---@param color_principal number
 local function agregar_claves_de_noice(clave, color_principal)
-	claves["NoiceCmdlinePopupTitle" .. clave] = { ctermfg = 0, ctermbg = color_principal }
+	claves["NoiceCmdlinePopupTitle" .. clave] =
+		util.fusionar_tablas(integracion_escencial.Title, { ctermbg = color_principal })
 	claves["NoiceCmdlinePopupBorder" .. clave] = { ctermfg = color_principal }
 	claves["NoiceCmdlineIcon" .. clave] = { ctermfg = color_principal }
 end
