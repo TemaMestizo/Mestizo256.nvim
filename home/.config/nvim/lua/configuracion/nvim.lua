@@ -18,3 +18,8 @@ vim.api.nvim_create_user_command("Pistas", function()
 end, {})
 
 vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+
+vim.fn.sign_define("DiagnosticSignError", { text = "󰊠 " })
+vim.fn.sign_define("DiagnosticSignInfo", { text = "󰊠 " })
+vim.fn.sign_define("DiagnosticSignHint", { text = "󰊠 " })
+vim.fn.sign_define("DiagnosticSignWarn", { text = "󰊠 " })

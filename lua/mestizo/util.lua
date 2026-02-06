@@ -61,4 +61,23 @@ M.crear_tabla_sobreescribible = function(tabla)
 	end
 end
 
+---@generic T
+---@param fn fun(): T
+---@return T
+M.anonima = function(fn)
+	return fn()
+end
+
+---@generic T,K
+---@param valor_dado T
+---@param tabla table<K, T>
+---@return K|nil
+M.obtener_clave_por_valor = function(valor_dado, tabla)
+	for clave, valor in pairs(tabla) do
+		if valor == valor_dado then
+			return clave
+		end
+	end
+end
+
 return M
