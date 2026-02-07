@@ -14,7 +14,7 @@ return {
 			content = {
 				active = function()
 					return MiniStatusline.combine_groups(
-						require("mestizo").integraciones_especiales.mini_statusline.obtener_todo_el_conjunto()
+						require("mestizo256").integraciones_especiales.mini_statusline.obtener_todo_el_conjunto()
 					)
 				end,
 			},

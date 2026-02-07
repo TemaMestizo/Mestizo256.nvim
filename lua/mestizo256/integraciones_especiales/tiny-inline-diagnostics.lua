@@ -32,10 +32,7 @@ return function()
 	vim.api.nvim_create_autocmd({ "LspAttach" }, {
 		pattern = "*",
 		callback = function()
-			if vim.g.colors_name ~= "mestizo" then
-				return true
-			end
-			require("mestizo.util").establecer_colores({ claves })
+			require("mestizo256.util").establecer_colores({ claves })
 		end,
 	})
 end

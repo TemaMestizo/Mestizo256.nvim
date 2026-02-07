@@ -7,7 +7,7 @@ return {
 		require("bufferline").setup({
 			options = {
         separator_style = "slant",
-				offsets = require("mestizo.util").map({ "fyler", "neo-tree" }, function(tipo_de_archivo)
+				offsets = require("mestizo256.util").map({ "fyler", "neo-tree" }, function(tipo_de_archivo)
 					return {
 						filetype = tipo_de_archivo,
 						text = "Archivos",
@@ -18,7 +18,7 @@ return {
 				end),
 			},
 		})
-		require("mestizo").integraciones_especiales.bufferline()
+		require("mestizo256").integraciones_especiales.bufferline()
 	end,
 	keys = {
 		{

@@ -1,4 +1,4 @@
-return require("mestizo.util").crear_tabla_sobreescribible({
+return require("mestizo256.util").crear_tabla_sobreescribible({
 	lsp = {
 		hover = {
 			enabled = true,

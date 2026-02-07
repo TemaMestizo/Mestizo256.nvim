@@ -9,7 +9,7 @@ local function crear_claves(tope, base)
 end
 
 return {
-	name = "mestizo",
+	name = "mestizo256",
 	init = function()
 		vim.opt.cursorline = true
 	end,

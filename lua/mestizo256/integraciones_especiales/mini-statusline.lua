@@ -1,4 +1,4 @@
-local util = require("mestizo.util")
+local util = require("mestizo256.util")
 
 ---@class MiniStatusline.Seccion
 ---@field hl string

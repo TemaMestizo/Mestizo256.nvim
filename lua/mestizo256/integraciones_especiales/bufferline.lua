@@ -1,5 +1,5 @@
-local integracion_bufferline = require("mestizo.integraciones.bufferline")
-local util = require("mestizo.util")
+local integracion_bufferline = require("mestizo256.integraciones.bufferline")
+local util = require("mestizo256.util")
 
 -- Código tomado de algun lugar de: https://github.com/loctvl842/monokai-pro.nvim
 return function()
@@ -31,15 +31,12 @@ return function()
 			),
 		}
 
-		require("mestizo.util").establecer_colores({ claves })
+		require("mestizo256.util").establecer_colores({ claves })
 	end
 
 	vim.api.nvim_create_autocmd({ "BufEnter", "BufReadPost", "BufWinEnter", "BufRead" }, {
 		pattern = "*",
 		callback = function()
-			if vim.g.colors_name ~= "mestizo" then
-				return true
-			end
 			asignar_color_de_icono()
 		end,
 	})

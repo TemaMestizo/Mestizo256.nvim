@@ -1,4 +1,4 @@
-local integracion_escencial = require("mestizo.integraciones.escencial")
+local integracion_escencial = require("mestizo256.integraciones.escencial")
 
 return {
 	BufferLineFill = { ctermbg = 16, nocombine = true },

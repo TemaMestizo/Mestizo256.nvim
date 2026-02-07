@@ -1,7 +1,7 @@
 -- IMPORTANTE: Esta integración no puede lucir bien, pues el complemento no provee las claves necesarias para
 
-local integracion_escencial = require("mestizo.integraciones.escencial")
-local util = require("mestizo.util")
+local integracion_escencial = require("mestizo256.integraciones.escencial")
+local util = require("mestizo256.util")
 
 return {
 	FylerNormal = util.fusionar_tablas(integracion_escencial.SubNormal, integracion_escencial.File),

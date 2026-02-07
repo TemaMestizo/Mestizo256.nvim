@@ -1,5 +1,5 @@
-local integracion_escencial = require("mestizo.integraciones.escencial")
-local util = require("mestizo.util")
+local integracion_escencial = require("mestizo256.integraciones.escencial")
+local util = require("mestizo256.util")
 
 local fondo_de_entrada, fondo_de_resultados, fondo_de_previsualizacion = 234, 235, 236
 

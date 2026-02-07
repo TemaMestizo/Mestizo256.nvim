@@ -1,5 +1,5 @@
-local util = require("mestizo.util")
-local integracion_escencial = require("mestizo.integraciones.escencial")
+local util = require("mestizo256.util")
+local integracion_escencial = require("mestizo256.integraciones.escencial")
 
 local claves = {
 	NoiceCmdlinePopupTitle = { link = "Title" },

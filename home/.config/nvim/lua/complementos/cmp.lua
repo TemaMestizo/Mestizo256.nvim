@@ -15,7 +15,7 @@ return {
 		local cmp = require("cmp")
 
 		cmp.setup({
-			window = require("mestizo").integraciones_especiales.cmp,
+			window = require("mestizo256").integraciones_especiales.cmp,
 			snippet = {
 				expand = function(args)
 					vim.snippet.expand(args.body)
