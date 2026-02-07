@@ -44,7 +44,7 @@ M.integraciones_especiales = {
 
 M.establecer = function()
 	vim.cmd.hi("clear")
-	vim.g.colors_name = "mestizo"
+	vim.g.colors_name = "mestizo256"
 	vim.o.termguicolors = false
 
 	util.establecer_colores(claves)
