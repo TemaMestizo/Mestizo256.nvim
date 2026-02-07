@@ -18,6 +18,7 @@ local function obtener_integraciones()
 		"blink",
 		"noice",
 		"mini-statusline",
+		"dashboard",
 	}
 
 	for _, nombre in ipairs(nombres_de_integraciones) do
@@ -38,6 +39,7 @@ M.integraciones_especiales = {
 	noice = require("mestizo.integraciones_especiales.noice"),
 	blink = require("mestizo.integraciones_especiales.blink"),
 	mini_statusline = require("mestizo.integraciones_especiales.mini-statusline"),
+	dashboard = require("mestizo.integraciones_especiales.dashboard"),
 }
 
 M.establecer = function()
