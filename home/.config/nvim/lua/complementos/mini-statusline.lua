@@ -7,17 +7,6 @@ return {
 	},
 	version = false,
 	config = function()
-		local MiniStatusline = require("mini.statusline")
-
-		MiniStatusline.setup({
-			use_icons = true,
-			content = {
-				active = function()
-					return MiniStatusline.combine_groups(
-						require("mestizo256.integraciones_especiales.mini-statusline").obtener()
-					)
-				end,
-			},
-		})
+		require("mini.statusline").setup(require("mestizo256.integraciones_especiales.mini-statusline").obtener())
 	end,
 }

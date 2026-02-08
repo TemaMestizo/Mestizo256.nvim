@@ -162,7 +162,7 @@ end
 
 M.espaciador = { hl = "MiniStatuslinePadding", strings = { "%=" } }
 
-function M.obtener()
+function M.obtener_todo_el_conjunto()
 	local cwd = M.crear_modulo_de_cwd()
 	local diff_agregado, diff_modificado, diff_eliminado = M.crear_modulo_de_git_diff()
 	local palabras = M.crear_modulo_de_palabras()
@@ -191,5 +191,13 @@ function M.obtener()
 		locacion,
 	}
 end
+
+M.obtener = require("mestizo256.util").crear_tabla_sobreescribible({
+	content = {
+		active = function()
+			return require("mini.statusline").combine_groups(M.obtener_todo_el_conjunto())
+		end,
+	},
+})
 
 return M
