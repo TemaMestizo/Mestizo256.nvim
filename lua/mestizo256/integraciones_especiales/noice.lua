@@ -1,4 +1,6 @@
-return require("mestizo256.util").crear_tabla_sobreescribible({
+local M = {}
+
+M.obtener = require("mestizo256.util").crear_tabla_sobreescribible({
 	lsp = {
 		hover = {
 			enabled = true,
@@ -10,3 +12,5 @@ return require("mestizo256.util").crear_tabla_sobreescribible({
 		},
 	},
 })
+
+return M

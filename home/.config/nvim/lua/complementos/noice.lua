@@ -1,7 +1,7 @@
 return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
-	opts = require("mestizo256").integraciones_especiales.noice({
+	opts = require("mestizo256.integraciones_especiales.noice").obtener({
 		lsp = {
 			signature = { enabled = true },
 			hover = { enabled = true },

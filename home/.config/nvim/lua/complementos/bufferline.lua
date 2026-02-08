@@ -6,19 +6,20 @@ return {
 	config = function()
 		require("bufferline").setup({
 			options = {
-        separator_style = "slant",
+				separator_style = "slant",
 				offsets = require("mestizo256.util").map({ "fyler", "neo-tree" }, function(tipo_de_archivo)
 					return {
 						filetype = tipo_de_archivo,
 						text = "Archivos",
 						text_align = "center",
-            highlight = "NeoTreeNormal",
+						highlight = "NeoTreeNormal",
 						separator = false,
 					}
 				end),
 			},
 		})
-		require("mestizo256").integraciones_especiales.bufferline()
+
+		require("mestizo256.integraciones_especiales.bufferline").obtener()
 	end,
 	keys = {
 		{

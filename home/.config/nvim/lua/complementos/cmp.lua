@@ -1,5 +1,5 @@
 return {
-  enabled = false,
+	enabled = false,
 	"hrsh7th/nvim-cmp",
 	dependencies = {
 		"neovim/nvim-lspconfig",
@@ -15,7 +15,7 @@ return {
 		local cmp = require("cmp")
 
 		cmp.setup({
-			window = require("mestizo256").integraciones_especiales.cmp,
+			window = require("mestizo256.integraciones_especiales.cmp").obtener(),
 			snippet = {
 				expand = function(args)
 					vim.snippet.expand(args.body)

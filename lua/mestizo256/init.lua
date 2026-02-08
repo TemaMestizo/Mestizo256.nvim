@@ -30,18 +30,6 @@ end
 
 local claves = obtener_integraciones()
 
-M.integraciones_especiales = {
-	reactive = require("mestizo256.integraciones_especiales.reactive"),
-	bufferline = require("mestizo256.integraciones_especiales.bufferline"),
-	cmp = require("mestizo256.integraciones_especiales.cmp"),
-	tiny_inline_diagnostics = require("mestizo256.integraciones_especiales.tiny-inline-diagnostics"),
-	hlchunk = require("mestizo256.integraciones_especiales.hlchunk"),
-	noice = require("mestizo256.integraciones_especiales.noice"),
-	blink = require("mestizo256.integraciones_especiales.blink"),
-	mini_statusline = require("mestizo256.integraciones_especiales.mini-statusline"),
-	dashboard = require("mestizo256.integraciones_especiales.dashboard"),
-}
-
 M.establecer = function()
 	vim.cmd.hi("clear")
 	vim.g.colors_name = "mestizo256"

@@ -5,7 +5,7 @@ return {
 		require("hlchunk").setup({
 			chunk = {
 				enable = true,
-				style = require("mestizo256").integraciones_especiales.hlchunk,
+				style = require("mestizo256.integraciones_especiales.hlchunk").obtener(),
 			},
 		})
 	end,

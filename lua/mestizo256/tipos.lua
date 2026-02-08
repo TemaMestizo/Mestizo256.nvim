@@ -1,0 +1,2 @@
+---@class IntegracionEspecial
+---@field obtener fun(): table|nil

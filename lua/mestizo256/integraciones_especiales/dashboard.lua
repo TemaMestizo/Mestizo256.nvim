@@ -1,4 +1,6 @@
-return require("mestizo256.util").crear_tabla_sobreescribible({
+local M = {}
+
+M.obtener = require("mestizo256.util").crear_tabla_sobreescribible({
 	theme = "doom",
 	config = {
 		header = {
@@ -16,8 +18,7 @@ return require("mestizo256.util").crear_tabla_sobreescribible({
 		week_header = {
 			enable = false,
 		},
-		center = {
-			{ desc = "[ Anfigeno] [ anfigenos] [ Anfigeno]" },
-		},
 	},
 })
+
+return M

@@ -162,7 +162,7 @@ end
 
 M.espaciador = { hl = "MiniStatuslinePadding", strings = { "%=" } }
 
-function M.obtener_todo_el_conjunto()
+function M.obtener()
 	local cwd = M.crear_modulo_de_cwd()
 	local diff_agregado, diff_modificado, diff_eliminado = M.crear_modulo_de_git_diff()
 	local palabras = M.crear_modulo_de_palabras()

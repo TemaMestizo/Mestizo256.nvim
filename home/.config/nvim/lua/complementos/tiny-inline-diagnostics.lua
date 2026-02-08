@@ -12,6 +12,6 @@ return {
 
 		vim.diagnostic.config({ virtual_text = false })
 
-		require("mestizo256").integraciones_especiales.tiny_inline_diagnostics()
+		require("mestizo256.integraciones_especiales.tiny-inline-diagnostics").obtener()
 	end,
 }

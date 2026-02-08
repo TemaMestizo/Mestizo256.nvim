@@ -1,4 +1,6 @@
-return {
+local M = {}
+
+M.obtener = require("mestizo256.util").crear_tabla_sobreescribible({
 	completion = {
 		border = "rounded",
 		winhighlight = table.concat({
@@ -17,4 +19,6 @@ return {
 			"Search:CmpDocumentationSearch",
 		}, ","),
 	},
-}
+})
+
+return M
