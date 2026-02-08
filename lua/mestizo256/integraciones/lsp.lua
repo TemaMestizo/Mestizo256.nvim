@@ -4,7 +4,8 @@ return {
 	["@function.call"] = { link = "Function" },
 	["@function.method"] = { link = "Method" },
 	["@function.method.call"] = { link = "Method" },
-  ["@string.escape"] = { ctermfg = 223, italic = true },
+	["@string.escape"] = { ctermfg = 223, italic = true },
 
 	["@variable.builtin.typescript"] = { link = "Builtin" },
+	["@markup.heading.gitcommit"] = { ctermfg = 15 },
 }

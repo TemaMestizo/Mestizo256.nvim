@@ -1,5 +1,7 @@
 package main
 
+
+
 import (
 	"fmt"
 	"math/rand"
@@ -353,11 +355,9 @@ func main() {
 
 	// Mostrar estadísticas salariales
 	stats := company.GetSalaryStatistics()
-	fmt.Println("\n=== Estadísticas Salariales ===")
 	fmt.Printf("Salario mínimo: $%.2f\n", stats.Min)
-	fmt.Printf("Salario máximo: $%.2f\n", stats.Max)
-	fmt.Printf("Salario promedio: $%.2f\n", stats.Avg)
-	fmt.Printf("Salario mediana: $%.2f\n", stats.Median)
+	fmt.Printf("Salariosd promedio: $%.2f\n", stats.Avg)
+	fmt.Printf("Salarioi mediana: $%.2f\n", stats.Median)
 
 	// Mostrar empleados por departamento
 	fmt.Println("\n=== Empleados por Departamento ===")
