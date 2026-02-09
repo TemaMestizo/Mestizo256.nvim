@@ -32,6 +32,10 @@ local claves = {
 	BufferLineBufferSelected = buffer_activo,
 	BufferLineBufferVisible = { link = "BufferLineBufferSelected" },
 
+	BufferLineDuplicate = util.fusionar_tablas(buffer_inactivo, { italic = true }),
+	BufferLineDuplicateVisible = util.fusionar_tablas(buffer_inactivo, { italic = true }),
+	BufferLineDuplicateSelected = util.fusionar_tablas(buffer_activo, integracion_escencial.Comment),
+
 	BufferLineCloseButton = { link = "BufferLineBuffer" },
 	BufferLineCloseButtonSelected = { link = "BufferLineBufferSelected" },
 	BufferLineCloseButtonVisible = { link = "BufferLineBufferVisible" },
@@ -60,12 +64,12 @@ local claves = {
 	BufferLinePick = { link = "BufferLinePickVisible" },
 
 	BufferLineTab = { link = "BufferLineBuffer" },
-	BufferLineTabSelected = { ctermfg = 0, ctermbg = 6 },
+	BufferLineTabSelected = { link = "BufferLineBufferSelected" },
 
 	BufferLineTabSeparator = { link = "BufferLineSeparator" },
-	BufferLineTabSeparatorSelected = { link = "BufferLineTabSelected" },
+	BufferLineTabSeparatorSelected = util.fusionar_tablas(buffer_activo, { ctermfg = buffer_inactivo.ctermbg }),
 
-	BufferLineTabClose = { link = "BufferLineTabSelected" },
+	BufferLineTabClose = util.fusionar_tablas(buffer_inactivo, { ctermfg = 1 }),
 
 	BufferLineOffsetSeparator = { link = "FloatBorder" },
 }
