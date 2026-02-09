@@ -1,5 +1,4 @@
 local integracion_escencial = require("mestizo256.integraciones.escencial")
-local util = require("mestizo256.util")
 
 return {
 	NeoTreeCursorLine = { ctermbg = 234 },
