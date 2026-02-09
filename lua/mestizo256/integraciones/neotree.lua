@@ -1,8 +1,14 @@
+local integracion_escencial = require("mestizo256.integraciones.escencial")
+local util = require("mestizo256.util")
+
 return {
 	NeoTreeCursorLine = { ctermbg = 234 },
 	NeoTreeNormal = { ctermbg = 16 },
 	NeoTreeNormalNC = { link = "NeoTreeNormal" },
-	NeoTreeWinSeparator = { ctermfg = 233, ctermbg = 233 },
+	NeoTreeWinSeparator = {
+		ctermfg = integracion_escencial.Normal.ctermbg,
+		ctermbg = integracion_escencial.Normal.ctermbg,
+	},
 
 	NeoTreeDirectoryIcon = { link = "Directory" },
 	NeoTreeDirectoryName = { link = "Directory" },

@@ -40,7 +40,7 @@ local claves = {
 	BufferLineDevIconDefaultInactive = { link = "BufferLineBufferVisible" },
 
 	BufferLineSeparator = { ctermfg = 16, ctermbg = 16 },
-	BufferLineSeparatorSelected = { ctermfg = 16, ctermbg = 233 },
+	BufferLineSeparatorSelected = { ctermfg = 16, ctermbg = integracion_escencial.Normal.ctermbg },
 	BufferLineSeparatorVisible = { link = "BufferLineSeparatorSelected" },
 
 	BufferLineIndicator = { ctermfg = 16, ctermbg = 16 },
