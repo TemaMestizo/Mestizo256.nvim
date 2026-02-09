@@ -51,7 +51,7 @@ return {
 	netrwHelpCmd = { ctermfg = 6 },
 	netrwClassify = { link = "Directory" },
 
-	Comment = { ctermfg = 242, italic = true },
+	Comment = { ctermfg = 243, italic = true },
 	Operator = { ctermfg = 1 },
 	Builtin = { ctermfg = 1, bold = true },
 	Property = { ctermfg = 99, nocombine = true },

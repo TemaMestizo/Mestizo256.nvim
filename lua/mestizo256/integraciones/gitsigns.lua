@@ -5,7 +5,7 @@ return {
   GitSignsStagedDelete = { ctermfg = 160 },
 	GitSignsChange = { link = "Modified" },
 	GitSignsDelete = { link = "Deleted" },
-	GitSignsCurrentLineBlame = { ctermfg = 243 },
+	GitSignsCurrentLineBlame = { ctermfg = 245 },
 	GitSignsAddInline = { ctermbg = 28 },
 	GitSignsDeleteInline = { ctermbg = 88 },
 	GitSignsChangeInline = { ctermbg = 100 },
