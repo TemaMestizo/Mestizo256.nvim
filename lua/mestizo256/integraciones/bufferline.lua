@@ -1,11 +1,35 @@
+local util = require("mestizo256.util")
 local integracion_escencial = require("mestizo256.integraciones.escencial")
 
-return {
-	BufferLineFill = { ctermbg = 16, nocombine = true },
+local buffer_activo = integracion_escencial.Normal
+local buffer_inactivo = { ctermfg = integracion_escencial.Comment.ctermfg, ctermbg = 16 }
+
+---@return table<string, table>
+local function crear_claves_de_mini_icons()
+	local ok, _ = pcall(require, "mini.icons")
+	if not ok then
+		return {}
+	end
+
+	local claves = {}
+	local integracion_mini_icons = require("mestizo256.integraciones.mini-icons")
+
+	for clave, valor in pairs(integracion_mini_icons) do
+		claves["BufferLine" .. clave .. "Selected"] = util.fusionar_tablas(buffer_activo, valor)
+		claves["BufferLine" .. clave .. "Inactive"] = util.fusionar_tablas(buffer_activo, valor)
+		claves["BufferLine" .. clave] = buffer_inactivo
+	end
+
+	return claves
+end
+
+local claves = {
+	BufferLineFill = buffer_inactivo,
+
+	BufferLineBackground = { link = "BufferLineFill" },
 
 	BufferLineBuffer = { link = "BufferLineFill" },
-	BufferLineBackground = { link = "BufferLineFill" },
-	BufferLineBufferSelected = integracion_escencial.Normal,
+	BufferLineBufferSelected = buffer_activo,
 	BufferLineBufferVisible = { link = "BufferLineBufferSelected" },
 
 	BufferLineCloseButton = { link = "BufferLineBuffer" },
@@ -45,3 +69,5 @@ return {
 
 	BufferLineOffsetSeparator = { link = "FloatBorder" },
 }
+
+return util.fusionar_tablas(claves, crear_claves_de_mini_icons())

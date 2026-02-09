@@ -19,6 +19,7 @@ local function obtener_integraciones()
 		"noice",
 		"mini-statusline",
 		"dashboard",
+    "mini-icons"
 	}
 
 	for _, nombre in ipairs(nombres_de_integraciones) do

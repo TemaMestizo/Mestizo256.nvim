@@ -19,7 +19,7 @@ return {
 			},
 		})
 
-		require("mestizo256.integraciones_especiales.bufferline").obtener()
+		-- require("mestizo256.integraciones_especiales.bufferline").obtener()
 	end,
 	keys = {
 		{
