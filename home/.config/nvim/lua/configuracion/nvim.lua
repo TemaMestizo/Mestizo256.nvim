@@ -10,6 +10,9 @@ vim.opt.relativenumber = true
 vim.opt.shell = "fish"
 vim.opt.laststatus = 3
 vim.opt.splitkeep = "screen"
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
 
 vim.o.winborder = "rounded"
 

@@ -13,7 +13,7 @@ return {
 	LineNr = { ctermfg = 238 },
 	Visual = { ctermbg = 53 },
 	LspInlayHint = { ctermbg = 234, ctermfg = 248 },
-	Folded = { ctermbg = 1, ctermfg = 232 },
+	Folded = { ctermbg = 232 },
 	Search = { ctermbg = 6, ctermfg = 0 },
 	CurSearch = { ctermbg = 1, ctermfg = 16 },
 	Pmenu = { ctermfg = 245, ctermbg = 233 },
