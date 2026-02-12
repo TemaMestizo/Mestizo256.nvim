@@ -36,6 +36,10 @@ pkgs.mkShell {
             git_config
             git_rebase
             gitattributes
+            markdown
+            markdown_inline
+            html
+            comment
           ]
           |> map (gramatica: {
             dir = "${gramatica}";
