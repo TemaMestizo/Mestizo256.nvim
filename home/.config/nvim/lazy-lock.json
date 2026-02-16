@@ -6,6 +6,7 @@
   "fyler.nvim": { "branch": "stable", "commit": "bb8b9f30c652c948d35211958b0deec3496bcc08" },
   "gitsigns.nvim": { "branch": "main", "commit": "abf82a65f185bd54adc0679f74b7d6e1ada690c9" },
   "hlchunk.nvim": { "branch": "main", "commit": "3bc2bd7aef28fbed6643534a0fdd0f19966544bc" },
+  "hover.nvim": { "branch": "main", "commit": "426a4ed53f9fb4e03e8fa501cdbd8a9ec1df2933" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
   "markview.nvim": { "branch": "main", "commit": "9e852c299351fc2110e763edc7fc899358ee112e" },
   "mini-git": { "branch": "main", "commit": "df3881fec1d2fd7f8b9334821861de511e71f69e" },

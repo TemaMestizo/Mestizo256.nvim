@@ -12,6 +12,7 @@ pkgs.mkShell {
     biome
     go
     gopls
+    markdown-oxide
   ];
 
   HOME = "./home";
@@ -47,7 +48,7 @@ pkgs.mkShell {
         config = lib.mkLuaInline /* lua */ ''
           function()
             vim.opt.runtimepath:prepend("${pkgs.vimPlugins.nvim-treesitter}")
-            require("nvim-treesitter.configs").setup({
+            require("nvim-treesitter").setup({
               highlight = { enable = true },
               indent = { enable = true },
             })

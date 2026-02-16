@@ -1,12 +1,11 @@
 local util = require("mestizo256.util")
 local M = {}
 
----@return table<table<string, string>>
+local claves = {}
+
 local function obtener_integraciones()
-	local integraciones = {}
-	local nombres_de_integraciones = {
+	local rutas = {
 		"escencial",
-		"lsp",
 		"neotree",
 		"fyler",
 		"gitsigns",
@@ -19,23 +18,33 @@ local function obtener_integraciones()
 		"noice",
 		"mini-statusline",
 		"dashboard",
-    "mini-icons",
-    "markview"
+		"mini-icons",
+		"markview",
 	}
 
-	for _, nombre in ipairs(nombres_de_integraciones) do
-		table.insert(integraciones, require("mestizo256.integraciones." .. nombre))
+	for _, ruta in ipairs(rutas) do
+		table.insert(claves, require("mestizo256.integraciones." .. ruta))
 	end
-
-	return integraciones
 end
 
-local claves = obtener_integraciones()
+local function obtener_claves_de_lsp()
+	local rutas = {
+		"general",
+		"markdown",
+	}
+
+	for _, ruta in ipairs(rutas) do
+		table.insert(claves, require("mestizo256.lsp." .. ruta))
+	end
+end
 
 M.establecer = function()
 	vim.cmd.hi("clear")
 	vim.g.colors_name = "mestizo256"
 	vim.o.termguicolors = false
+
+	obtener_integraciones()
+	obtener_claves_de_lsp()
 
 	util.establecer_colores(claves)
 end

@@ -1,4 +1,4 @@
-local integracion_lsp = require("mestizo256.integraciones.lsp")
+local integracion_lsp = require("mestizo256.lsp.markdown")
 
 return {
 	MarkviewHeading1 = { link = "@markup.heading.1.markdown" },
@@ -29,8 +29,8 @@ return {
 	MarkviewGradient5 = { ctermfg = 124 },
 	MarkviewGradient6 = { ctermfg = 160 },
 	MarkviewGradient7 = { ctermfg = 196 },
-	MarkviewGradient8 = { ctermfg = 1 },
-	MarkviewGradient9 = { ctermfg = 9 },
+	MarkviewGradient8 = { ctermfg = 196 },
+	MarkviewGradient9 = { ctermfg = 1 },
 	MarkviewBlockQuoteSpecial = { ctermfg = 6 },
 	MarkviewBlockQuoteDefault = { ctermfg = 4 },
 	MarkviewBlockQuoteError = { ctermfg = 1 },

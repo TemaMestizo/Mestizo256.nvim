@@ -50,5 +50,6 @@ return {
 		vim.lsp.enable("lua_ls")
 		vim.lsp.enable("nixd")
 		vim.lsp.enable("nil")
+		vim.lsp.enable("markdown_oxide")
 	end,
 }
