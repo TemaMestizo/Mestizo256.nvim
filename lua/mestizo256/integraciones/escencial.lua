@@ -1,5 +1,5 @@
 return {
-	Title = { ctermfg = 0, ctermbg = 235, bold = true },
+	Title = { ctermfg = 0, ctermbg = 7, bold = true },
 	SubNormal = { ctermbg = 16 },
 	Normal = { ctermfg = 7, ctermbg = 233 },
 	NormalFloat = { link = "Normal" },
