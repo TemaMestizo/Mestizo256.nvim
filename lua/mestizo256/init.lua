@@ -20,6 +20,7 @@ local function obtener_integraciones()
 		"dashboard",
 		"mini-icons",
 		"markview",
+		"navic",
 	}
 
 	for _, ruta in ipairs(rutas) do
