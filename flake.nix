@@ -2,20 +2,17 @@
   description = "Un tema oscuro de Neovim para los que no salen de casa";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/26.05";
+    flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
   outputs =
-    { self, nixpkgs }:
-    let
-      system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
-      lib = pkgs.lib;
-    in
-    {
-      devShells.${system} = {
-        default = import ./nix/shell-de-desarrollo.nix { inherit pkgs; };
-        pruebas = import ./nix/shell-de-pruebas.nix { inherit pkgs lib; };
-      };
+    inputs@{ flake-parts, ... }:
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      systems = [ "x86_64-linux" ];
+      imports = [
+        ./nix/shell-de-desarrollo.nix
+        ./nix/shell-de-pruebas.nix
+      ];
     };
 }

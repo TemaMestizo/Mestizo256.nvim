@@ -1,11 +1,14 @@
-{ pkgs }:
-pkgs.mkShell {
-  packages = with pkgs; [
-    nil
-    nixd
-    nixfmt
-    lua-language-server
-    stylua
-    lua
-  ];
+{ ... }: {
+  perSystem = { pkgs, ... }: {
+    devShells.default = pkgs.mkShell {
+      packages = with pkgs; [
+        nil
+        nixd
+        nixfmt
+        lua-language-server
+        stylua
+        lua
+      ];
+    };
+  };
 }
