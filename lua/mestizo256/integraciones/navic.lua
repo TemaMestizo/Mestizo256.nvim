@@ -25,6 +25,6 @@ return {
 	NavicIconsEvent = { link = "Normal" },
 	NavicIconsOperator = { link = "Operator" },
 	NavicIconsTypeParameter = { link = "Type" },
-	NavicText = { link = "Normal" },
-	NavicSeparator = { ctermfg = 241, bold = false },
+	NavicText = { ctermfg = 250 },
+	NavicSeparator = { ctermfg = 241 },
 }

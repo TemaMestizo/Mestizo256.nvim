@@ -23,6 +23,8 @@ return {
 	CursorLine = { ctermbg = 234 },
 	CursorLineNr = { ctermfg = 209, ctermbg = 233, bold = true },
 	CursorLineSign = { ctermfg = 209, ctermbg = 233, bold = true },
+	WinBar = { bold = false },
+	WinBarNC = { bold = false },
 
 	Directory = { ctermfg = 252 },
 	File = { ctermfg = 250 },
