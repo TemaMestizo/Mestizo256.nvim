@@ -2,9 +2,9 @@ local M = {}
 
 M.obtener = require("mestizo256.util").crear_tabla_sobreescribible({
 	chunk = {
-    enable = true,
+		enable = true,
 		style = {
-			{ ctermfg = 90 },
+			{ ctermfg = 238 },
 			{ ctermfg = 1 },
 		},
 	},
